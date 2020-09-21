@@ -1,0 +1,129 @@
+@mixin clearfix() {
+    clear: both;
+}
+@mixin container() {
+    margin: auto;
+    width: 1280px;
+
+    @media (max-width: 1280px) {
+        width: 1140px;
+    }
+    @media (max-width: 1140px) {
+        width: 960px;
+    }
+    @media (max-width: 960px) {
+        width: 100%;
+    }
+}
+@mixin mask() {
+    background-color: rgba(250, 250, 250, 0.7);
+}
+@mixin title() {
+    width: 25%;
+
+    font-size: $font36;
+    font-weight: bolder;
+
+    padding: 10px;
+    height: 50px;
+    color: $font_deep;
+    font-weight: bolder;
+    line-height: 25px;
+    text-align: center;
+    border: outset rgb(255, 255, 255);
+    @media (max-width: 1280px) {
+        width: 25%;
+        font-size: $font30;
+    }
+    @media (max-width: 1140px) {
+        width: 25%;
+    }
+    @media (max-width: 960px) {
+        width: 25%;
+        font-size: $font20;
+    }
+}
+@mixin sugg-group() {
+    width: 50%;
+    display: flex;
+    @media (max-width: 1440px) {
+        width: 40%;
+    }
+    @media (max-width: 1140px) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sugg-pic {
+        width: 40%;
+        border-radius: 50%;
+        border: 7px solid #96a884;
+        @media (max-width: 1440px) {
+            width: 40%;
+        }
+        @media (max-width: 1140px) {
+            border: 5px solid #96a884;
+            width: 30%;
+        }
+    }
+    .sugg-context {
+        width: 60%;
+        margin-left: 50px;
+
+        @media (max-width: 1140px) {
+            width: 80%;
+        }
+
+        .sugg-title {
+            width: 100%;
+            font-weight: bold;
+            font-size: $font30;
+            margin-top: 100px;
+            margin-bottom: 10px;
+            color: #003e3e;
+            display: flex;
+            @media (max-width: 1440px) {
+                font-size: $font24;
+            }
+            @media (max-width: 1280px) {
+                margin-top: 20px;
+                font-size: $font20;
+            }
+            @media (max-width: 1140px) {
+                width: 50%;
+            }
+            @media (max-width: 960px) {
+                font-size: $font18;
+            }
+            .small-pic{
+                width: 10%;
+            }
+            .sug-title{
+                width: 80%;
+                text-align: center;
+                @media (max-width: 1140px) {
+                    width: 50%;
+                }
+            }
+        }
+        .sugg-text {
+            width: 100%;
+            font-size: $font24;
+            color: #164344;
+            font-weight: bold;
+            @media (max-width: 1440px) {
+                font-size: $font20;
+            }
+            @media (max-width: 1280px) {
+                width: 60%;
+                
+            }
+            @media (max-width: 1140px) {
+                font-size: $font18;
+            }
+            @media (max-width: 960px) {
+                font-weight: normal;
+            }
+        }
+    }
+}

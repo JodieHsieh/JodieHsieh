@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, 微軟正黑體;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url("./02素材/body背景/leaves/leaves/leaves.png");
+    background-repeat: repeat;
+}
+$font36: 36px;
+$font30: 30px;
+$font24: 24px;
+$font20: 20px;
+$font18: 18px;
+$font_deep: rgb(1, 32, 44);
+$color_deeporange: rgb(228, 129, 78);
+$color-medorange: rgb(220, 141, 108);
+$color-ligorange: rgb(252, 172, 138);
+@import "./onepagepack";
+///
+
+.go-to-top {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 43.3px 25px;
+    border-color: transparent transparent #db7bae transparent;
+
+    line-height: 43.3px;
+    text-align: center;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+    @media (max-width: 960px) {
+        border-width: 0 20px 34.6px 20px;
+    }
+}
+.display {
+    display: none;
+}
+
+header {
+    width: 100%;
+    .navbar {
+        margin: auto;
+        width: 100%;
+        height: 90px;
+        background-color: rgba(158, 177, 158, 0.6);
+        display: flex;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        .logo-group {
+            width: 30%;
+            .logo-pic {
+                width: 90px;
+                float: left;
+                margin: 0 10px;
+            }
+            .logo-text {
+                float: left;
+                text-align: center;
+                line-height: 45px;
+                font-weight: bolder;
+                font-size: $font24;
+                color: rgb(1, 32, 44);
+                p {
+                    margin: 0;
+                }
+            }
+            .clearfix {
+                @include clearfix();
+            }
+        }
+        .btn-group {
+            width: 70%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-end;
+
+            .btn {
+                background-color: $color_deeporange;
+
+                padding: 10px;
+                height: 50px;
+                color: $font_deep;
+                font-weight: bolder;
+                line-height: 25px;
+                text-align: center;
+                font-size: $font24;
+                border: outset rgb(255, 255, 255);
+
+                transition: 0.5s;
+                @media (max-width: 1280px) {
+                    font-size: $font20;
+                }
+                @media (max-width: 960px) {
+                    font-size: $font18;
+                }
+                &:hover {
+                    letter-spacing: 5px;
+                }
+                &:active {
+                    color: rgb(40, 99, 90);
+                }
+            }
+            .btn.color-med {
+                background-color: $color-medorange;
+            }
+            .btn.color-lig {
+                background-color: $color-ligorange;
+            }
+            .clearfix {
+                @include clearfix();
+            }
+        }
+    }
+    .banner {
+        .swiper-container {
+            width: 100%;           
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    .banner-pic01 {
+                        width: 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .swiper-button-next {
+                color: white;
+            }
+            .swiper-button-prev {
+                color: white;
+            }
+            .swiper-pagination-bullet {
+                background: white;
+            }
+        }
+    }
+}
+.content {
+    .About {
+        position: relative;
+        #fake01 {
+            position: absolute;
+            top: -100px;
+        }
+        .container {
+            @include container();
+
+            .color-deep {
+                background-color: $color_deeporange;
+                margin: 100px auto 50px;
+                @include title();
+            }
+            .idea {
+                width: 100%;
+
+                border-width: 2px 3px 2px 5px;
+                border: dashed rgb(228, 129, 78) 2px;
+                border-radius: 90% 6% 93% 5% / 5% 94% 7% 95%;
+                /* 做出傾斜的視覺感 */
+                transform: rotate(2deg);
+                padding: 50px;
+                margin-bottom: 100px;
+                .idea-bacimg {
+                    transform: rotate(-2deg);
+                    width: 100%;
+                    min-height: 500px;
+                    display: flex;
+                    @media (max-width: 960px) {
+                        flex-wrap: wrap;
+                    }
+                    .about-mask {
+                        width: 50%;
+                        padding: 10px;                        
+                        background-position: center;
+                        .about-pic {
+                            width: 100%;
+
+                            @media (max-width: 960px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .about-group {
+                        width: 50%;
+                        padding: 10px;
+                        color: #333333;
+                        @media (max-width: 960px) {
+                            width: 100%;
+                        }
+                        .about-topic {
+                            font-size: $font30;
+                            font-weight: bold;
+
+                            margin-bottom: 50px;
+                            @media (max-width: 960px) {
+                                width: 100%;
+                                margin-bottom: 30px;
+                                font-size: $font24;
+                            }
+                        }
+                        .about-text {
+                            font-size: $font20;
+                            @media (max-width: 960px) {
+                                width: 100%;
+                                font-size: $font24;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .uphold {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        background-color: rgb(22, 67, 68);
+        @media (max-width: 960px) {
+            height: 250px;
+        }
+        .up-text {
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: $font30;
+            @media (max-width: 1280px) {
+                font-size: $font24;
+            }
+            @media (max-width: 960px) {
+                font-size: $font18;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .Menu {
+        position: relative;
+        #fake02 {
+            position: absolute;
+            top: 0;
+        }
+        .menu-bacimg {
+            width: 100%;
+            min-height: 970px;
+            background-image: url("./02素材/body背景/蔬菜背景-02.png");
+            background-attachment: fixed;
+            padding-top: 150px;
+            .mask {
+                @include mask();
+                .container {
+                    @include container();
+                    padding-bottom: 100px;
+                    .title {
+                        background-color: $color-medorange;
+                        @include title();
+                        margin: auto;
+                    }
+                }
+
+                .container {
+                    @include container();
+
+                    .taggs {
+                        margin: auto;
+                        width: 100%;
+                        .tagg-group {
+                            display: flex;
+                            .tagg-pic {
+                                width: 5%;
+                                @media (max-width: 1140px) {
+                                    width: 4%;
+                                }
+                                @media (max-width: 960px) {
+                                    width: 4%;
+                                }
+                            }
+                            .tagg {
+                                width: 30%;
+
+                                text-align: center;
+                                color: #006000;
+                                font-size: $font36;
+                                font-weight: bolder;
+                                padding: 5px 0;
+                                margin: 10px 0;
+
+                                transition: 0.5s;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                                @media (max-width: 1140px) {
+                                    font-size: $font30;
+                                    
+                                }
+                                @media (max-width: 960px) {
+                                    font-size: $font24;
+                                   
+                                }
+                            }
+                            .tagg.act {
+                                color: #01202c;
+                            }
+                            
+                        }                        
+
+                        .text_box {
+                            overflow: hidden;
+                            height: 0;
+                            transition: 1s;
+                            display: flex;
+                            flex-wrap: wrap;
+                            border-radius: 30px;
+
+                            .item {
+                                width: 25%;
+
+                                @media (max-width: 1280px) {
+                                    width: 50%;
+                                }
+                                @media (max-width: 960px) {
+                                    width: 100%;
+                                }
+                                .item.mask {
+                                    background-color: rgba(192, 192, 192, 0.5);
+                                }
+                                &:hover {
+                                    background-color: unset;
+                                    transition: 1s;
+                                    color: #467500;
+                                }
+                                .pic {
+                                    width: 95%;
+                                    height: auto;
+                                    max-height: 200px;
+                                    margin: 5px;
+                                    @media (max-width: 1280px) {
+                                        width: 90%;
+                                    }
+                                    @media (max-width: 1140px) {
+                                        width: 85%;
+                                    }
+                                    @media (max-width: 960px) {
+                                        width: 85%;
+                                    }
+                                }
+
+                                .item_price {
+                                    margin: auto;
+                                    width: 100%;
+                                    height: auto;
+
+                                    font-size: $font30;
+                                    font-weight: bolder;
+                                    text-align: center;
+                                    @media (max-width: 1280px) {
+                                        font-size: $font24;
+                                    }
+                                    @media (max-width: 960px) {
+                                        font-size: $font20;
+                                    }
+                                }
+
+                                h3 {
+                                    font-size: $font24;
+                                    text-align: center;
+                                    width: 100%;
+                                    @media (max-width: 1280px) {
+                                        font-size: $font20;
+                                    }
+                                    @media (max-width: 960px) {
+                                        font-size: $font18;
+                                    }
+                                }
+                            }
+                        }
+
+                        .text_box.actt {
+                            width: 100%;
+                            height: auto;
+                            color: #c0c0c0;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Suggest {
+        position: relative;
+        #fake03 {
+            position: absolute;
+            top: -20px;
+        }
+        .container {
+            @include container();
+            display: flex;
+            justify-content: center;
+            .title-pic {
+                width: 20%;
+                margin: 50px 0 100px;
+                @media (max-width: 1140px) {
+                    margin: 10px 0 10px;
+                }
+            }
+            .title {
+                width: 40%;
+                font-size: $font36;
+                font-weight: bolder;
+
+                padding: 10px;
+                height: 50px;
+                color: #01202c;
+                font-weight: bolder;
+                line-height: 25px;
+
+                margin: 150px 0 300px;
+                @media (max-width: 1280px) {
+                    font-size: $font30;
+                    width: 50%;
+                }
+                @media (max-width: 1140px) {
+                    font-size: $font24;
+                    margin: 100px 0 200px;
+                }
+                @media (max-width: 960px) {
+                    font-size: $font20;
+                }
+            }
+        }
+        .sugg-bacimg {
+            width: 100%;
+            min-height: 2000px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("./02素材/清單圖示/推薦時間軸_工作區域\ 1.png");
+            margin-bottom: 150px;
+            @media (max-width: 1440px) {
+                width: 100%;
+
+                background-image: url("./02素材/清單圖示/推薦時間軸-切版直線_工作區域\ 1.png");
+                background-position: center;
+            }
+            @media (max-width: 1140px) {
+                background-position: left;
+            }
+            .suggs {
+                position: relative;
+
+                width: 100%;
+
+                .sugg-group.set01 {
+                    @include sugg-group();
+                    position: absolute;
+                    left: 18%;
+                    @media (max-width: 1440px) {
+                        left: 5%;
+                    }
+                }
+                .sugg-group.set02 {
+                    @include sugg-group();
+                    position: absolute;
+                    right: 15%;
+                    top: 300px;
+                    @media (max-width: 1440px) {
+                        right: 10%;
+                    }
+                    @media (max-width: 1280px) {
+                        top: 350px;
+                    }
+                    @media (max-width: 1140px) {
+                        flex-direction: column-reverse;
+                        top: 400px;
+                        right: 0;
+                        left: 5%;
+                    }
+                    @media (max-width: 960px) {
+                    }
+                }
+                .sugg-group.set03 {
+                    position: absolute;
+                    top: 850px;
+                    left: 18%;
+                    @include sugg-group();
+                    @media (max-width: 1440px) {
+                        top: 700px;
+                        left: 5%;
+                    }
+                    @media (max-width: 1140px) {
+                        top: 800px;
+                    }
+                    @media (max-width: 960px) {
+                    }
+                }
+                .sugg-group.set04 {
+                    position: absolute;
+                    top: 1300px;
+                    right: 10%;
+
+                    @include sugg-group();
+                    @media (max-width: 1440px) {
+                        right: 10%;
+                        top: 1050px;
+                    }
+
+                    @media (max-width: 1140px) {
+                        flex-direction: column-reverse;
+                        top: 1200px;
+                        right: 0;
+                        left: 5%;
+                    }
+                    @media (max-width: 960px) {
+                    }
+                }
+                .sugg-group.set05 {
+                    position: absolute;
+                    top: 1620px;
+                    left: 22%;
+
+                    @include sugg-group();
+                    @media (max-width: 1440px) {
+                        top: 1550px;
+                        left: 5%;
+                    }
+                    @media (max-width: 1140px) {
+                        top: 1600px;
+                    }
+                    @media (max-width: 960px) {
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    .Contact {
+        width: 100%;
+        background-color: #28635a;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .map {
+            width: 50%;
+            @media (max-width: 960px) {
+                width: 100%;
+            }
+        }
+        .contact-group {
+            width: 35%;
+            font-size: $font20;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-items: center;
+
+            padding-top: 50px;
+            @media (max-width: 960px) {
+                width: 100%;
+            }
+
+            .contact-text {
+                width: 100%;
+                .mar{
+                    margin:0 10px ;
+                }
+            }
+            .icon-group {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                justify-items: space-between;
+                img {
+                    width: 30%;
+                    filter: drop-shadow(5px 5px 5px rgba(1, 32, 44, 0.7));
+                }
+            }
+        }
+    }
+    .CC {
+        background-color: rgb(1, 32, 44);
+        text-align: center;
+        font-size: $font18;
+        color: white;
+        padding: 30px 0 10px;
+    }
+}
