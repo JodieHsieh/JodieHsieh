@@ -44,7 +44,7 @@
     }
 }
 @mixin sugg-group() {
-    width: 50%;
+    width: 80%;
     display: flex;
     @media (max-width: 1440px) {
         width: 40%;
@@ -55,7 +55,7 @@
     }
 
     .sugg-pic {
-        width: 40%;
+        width: 50%;
         border-radius: 50%;
         border: 7px solid #96a884;
         @media (max-width: 1440px) {
@@ -67,7 +67,7 @@
         }
     }
     .sugg-context {
-        width: 60%;
+        width: 50%;
         margin-left: 50px;
 
         @media (max-width: 1140px) {
@@ -95,11 +95,12 @@
             @media (max-width: 960px) {
                 font-size: $font18;
             }
-            .small-pic{
+            .small-pic {
                 width: 10%;
+                text-align: center;
             }
-            .sug-title{
-                width: 80%;
+            .sug-title {
+                width: auto;
                 text-align: center;
                 @media (max-width: 1140px) {
                     width: 50%;
@@ -107,7 +108,7 @@
             }
         }
         .sugg-text {
-            width: 100%;
+            width: auto;
             font-size: $font24;
             color: #164344;
             font-weight: bold;
@@ -116,7 +117,6 @@
             }
             @media (max-width: 1280px) {
                 width: 60%;
-                
             }
             @media (max-width: 1140px) {
                 font-size: $font18;

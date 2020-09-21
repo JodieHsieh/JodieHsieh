@@ -714,7 +714,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg {
   width: 100%;
-  min-height: 2000px;
+  min-height: 1900px;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("./02素材/清單圖示/推薦時間軸_工作區域 1.png");
@@ -723,7 +723,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg {
-    width: 100%;
+    width: 90%;
     background-image: url("./02素材/清單圖示/推薦時間軸-切版直線_工作區域 1.png");
     background-position: center;
   }
@@ -741,12 +741,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 {
-  width: 50%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 18%;
+  padding-left: 20%;
 }
 
 @media (max-width: 1440px) {
@@ -764,7 +763,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 .sugg-pic {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 7px solid #96a884;
 }
@@ -783,7 +782,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 .sugg-context {
-  width: 60%;
+  width: 50%;
   margin-left: 50px;
 }
 
@@ -832,10 +831,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 .sugg-context .sugg-title .small-pic {
   width: 10%;
+  text-align: center;
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 .sugg-context .sugg-title .sug-title {
-  width: 80%;
+  width: auto;
   text-align: center;
 }
 
@@ -846,7 +846,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 .sugg-context .sugg-text {
-  width: 100%;
+  width: auto;
   font-size: 24px;
   color: #164344;
   font-weight: bold;
@@ -878,18 +878,22 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 {
-    left: 5%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .content .Suggest .sugg-bacimg .suggs .sugg-group.set01 {
+    margin-left: 8%;
   }
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 {
-  width: 50%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 15%;
-  top: 300px;
+  padding-left: 25%;
 }
 
 @media (max-width: 1440px) {
@@ -907,7 +911,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 .sugg-pic {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 7px solid #96a884;
 }
@@ -926,7 +930,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 .sugg-context {
-  width: 60%;
+  width: 50%;
   margin-left: 50px;
 }
 
@@ -975,10 +979,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 .sugg-context .sugg-title .small-pic {
   width: 10%;
+  text-align: center;
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 .sugg-context .sugg-title .sug-title {
-  width: 80%;
+  width: auto;
   text-align: center;
 }
 
@@ -989,7 +994,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 .sugg-context .sugg-text {
-  width: 100%;
+  width: auto;
   font-size: 24px;
   color: #164344;
   font-weight: bold;
@@ -1021,13 +1026,8 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 {
-    right: 10%;
-  }
-}
-
-@media (max-width: 1280px) {
-  .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 {
-    top: 350px;
+    padding-left: 0;
+    margin-left: 55%;
   }
 }
 
@@ -1037,17 +1037,20 @@ header .banner .swiper-container .swiper-pagination-bullet {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    top: 400px;
-    right: 0;
-    left: 5%;
+  }
+}
+
+@media (max-width: 960px) {
+  .content .Suggest .sugg-bacimg .suggs .sugg-group.set02 {
+    margin-top: 20px;
+    margin-left: 8%;
   }
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 {
-  position: absolute;
-  top: 850px;
-  left: 18%;
-  width: 50%;
+  margin-top: 150px;
+  padding-left: 10%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1068,7 +1071,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 .sugg-pic {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 7px solid #96a884;
 }
@@ -1087,7 +1090,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 .sugg-context {
-  width: 60%;
+  width: 50%;
   margin-left: 50px;
 }
 
@@ -1136,10 +1139,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 .sugg-context .sugg-title .small-pic {
   width: 10%;
+  text-align: center;
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 .sugg-context .sugg-title .sug-title {
-  width: 80%;
+  width: auto;
   text-align: center;
 }
 
@@ -1150,7 +1154,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 .sugg-context .sugg-text {
-  width: 100%;
+  width: auto;
   font-size: 24px;
   color: #164344;
   font-weight: bold;
@@ -1182,22 +1186,22 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 {
-    top: 700px;
-    left: 5%;
+    margin-top: 100px;
+    padding-left: 0;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 960px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set03 {
-    top: 800px;
+    margin-left: 8%;
+    margin-top: 20px;
   }
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 {
-  position: absolute;
-  top: 1300px;
-  right: 10%;
-  width: 50%;
+  margin-top: 250px;
+  padding-left: 32%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,7 +1222,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 .sugg-pic {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 7px solid #96a884;
 }
@@ -1237,7 +1241,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 .sugg-context {
-  width: 60%;
+  width: 50%;
   margin-left: 50px;
 }
 
@@ -1286,10 +1290,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 .sugg-context .sugg-title .small-pic {
   width: 10%;
+  text-align: center;
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 .sugg-context .sugg-title .sug-title {
-  width: 80%;
+  width: auto;
   text-align: center;
 }
 
@@ -1300,7 +1305,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 .sugg-context .sugg-text {
-  width: 100%;
+  width: auto;
   font-size: 24px;
   color: #164344;
   font-weight: bold;
@@ -1332,8 +1337,9 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 {
-    right: 10%;
-    top: 1050px;
+    padding-left: 0;
+    margin-left: 55%;
+    margin-top: 100px;
   }
 }
 
@@ -1343,17 +1349,19 @@ header .banner .swiper-container .swiper-pagination-bullet {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    top: 1200px;
-    right: 0;
-    left: 5%;
+  }
+}
+
+@media (max-width: 960px) {
+  .content .Suggest .sugg-bacimg .suggs .sugg-group.set04 {
+    margin-left: 8%;
   }
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 {
-  position: absolute;
-  top: 1620px;
-  left: 22%;
-  width: 50%;
+  padding-left: 20%;
+  margin-top: 50px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1374,7 +1382,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 .sugg-pic {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
   border: 7px solid #96a884;
 }
@@ -1393,7 +1401,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 .sugg-context {
-  width: 60%;
+  width: 50%;
   margin-left: 50px;
 }
 
@@ -1442,10 +1450,11 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 .sugg-context .sugg-title .small-pic {
   width: 10%;
+  text-align: center;
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 .sugg-context .sugg-title .sug-title {
-  width: 80%;
+  width: auto;
   text-align: center;
 }
 
@@ -1456,7 +1465,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 }
 
 .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 .sugg-context .sugg-text {
-  width: 100%;
+  width: auto;
   font-size: 24px;
   color: #164344;
   font-weight: bold;
@@ -1488,14 +1497,14 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 1440px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 {
-    top: 1550px;
-    left: 5%;
+    padding-left: 0;
+    margin-top: 10%;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 960px) {
   .content .Suggest .sugg-bacimg .suggs .sugg-group.set05 {
-    top: 1600px;
+    margin-left: 8%;
   }
 }
 
