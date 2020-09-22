@@ -133,7 +133,7 @@ header .navbar .btn-set .btn-group {
 @media (max-width: 960px) {
   header .navbar .btn-set .btn-group {
     display: none;
-    width: 25%;
+    width: 60%;
   }
   header .navbar .btn-set .btn-group.active {
     display: block;
@@ -271,7 +271,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 960px) {
   .content .About .container .color-deep {
-    width: 25%;
+    width: 50%;
     font-size: 20px;
   }
 }
@@ -476,7 +476,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 960px) {
   .content .Menu .menu-bacimg .mask .container .title {
-    width: 25%;
+    width: 50%;
     font-size: 20px;
   }
 }
@@ -558,6 +558,7 @@ header .banner .swiper-container .swiper-pagination-bullet {
 
 @media (max-width: 960px) {
   .content .Menu .menu-bacimg .mask .container .taggs .tagg-group .tagg {
+    width: 80%;
     font-size: 24px;
   }
 }

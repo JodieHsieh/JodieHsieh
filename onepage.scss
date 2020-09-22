@@ -108,7 +108,7 @@ header {
                 justify-content: flex-end;
                 @media (max-width: 960px) {
                     display: none;
-                    width: 25%;
+                    width: 60%;
                     &.active {
                         display: block;
                     }
@@ -339,6 +339,7 @@ header {
                                     font-size: $font30;
                                 }
                                 @media (max-width: 960px) {
+                                    width: 80%;
                                     font-size: $font24;
                                 }
                             }
