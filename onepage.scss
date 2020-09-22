@@ -54,7 +54,6 @@ $color-ligorange: rgb(252, 172, 138);
 header {
     width: 100%;
     .navbar {
-        margin: auto;
         width: 100%;
         height: 90px;
         background-color: rgba(158, 177, 158, 0.6);
@@ -65,66 +64,91 @@ header {
         left: 0;
         .logo-group {
             width: 30%;
+            display: flex;
             .logo-pic {
                 width: 90px;
-                float: left;
                 margin: 0 10px;
             }
             .logo-text {
-                float: left;
                 text-align: center;
                 line-height: 45px;
                 font-weight: bolder;
                 font-size: $font24;
                 color: rgb(1, 32, 44);
-                p {
-                    margin: 0;
-                }
-            }
-            .clearfix {
-                @include clearfix();
-            }
-        }
-        .btn-group {
-            width: 70%;
-            padding: 10px 0;
-            display: flex;
-            justify-content: flex-end;
-
-            .btn {
-                background-color: $color_deeporange;
-
-                padding: 10px;
-                height: 50px;
-                color: $font_deep;
-                font-weight: bolder;
-                line-height: 25px;
-                text-align: center;
-                font-size: $font24;
-                border: outset rgb(255, 255, 255);
-
-                transition: 0.5s;
-                @media (max-width: 1280px) {
-                    font-size: $font20;
-                }
+                // .logo-name {
+                // }
                 @media (max-width: 960px) {
                     font-size: $font18;
                 }
-                &:hover {
-                    letter-spacing: 5px;
+            }
+        }
+        .btn-set {
+            width: 70%;
+            padding: 10px 0;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            .hanburger {
+                width: 10%;
+                padding: 10px;
+                height: 50px;
+                color: $font_deep;
+                line-height: 50px;
+                text-align: center;
+                font-size: $font36;
+                display: none;
+                margin-bottom: 20px;
+                @media (max-width: 960px) {
+                    display: block;
                 }
-                &:active {
-                    color: rgb(40, 99, 90);
+            }
+            .btn-group {
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+                @media (max-width: 960px) {
+                    display: none;
+                    width: 25%;
+                    &.active {
+                        display: block;
+                    }
                 }
-            }
-            .btn.color-med {
-                background-color: $color-medorange;
-            }
-            .btn.color-lig {
-                background-color: $color-ligorange;
-            }
-            .clearfix {
-                @include clearfix();
+
+                .btn {
+                    background-color: $color_deeporange;
+                    padding: 10px;
+                    height: 50px;
+                    color: $font_deep;
+                    font-weight: bolder;
+                    line-height: 25px;
+                    text-align: center;
+                    font-size: $font24;
+                    border: outset rgb(255, 255, 255);
+                    display: inline-block;
+                    transition: 0.5s;
+                    @media (max-width: 1280px) {
+                        font-size: $font20;
+                    }
+                    @media (max-width: 960px) {
+                        width: 100%;
+                        font-size: $font18;
+                    }
+                    &:hover {
+                        letter-spacing: 5px;
+                    }
+                    &:active {
+                        color: rgb(40, 99, 90);
+                    }
+                }
+                .btn.color-med {
+                    background-color: $color-medorange;
+                }
+                .btn.color-lig {
+                    background-color: $color-ligorange;
+                }
+                .clearfix {
+                    @include clearfix();
+                }
             }
         }
     }
@@ -168,7 +192,7 @@ header {
                 @include title();
             }
             .idea {
-                width: 100%;
+                width: 90%;
 
                 border-width: 2px 3px 2px 5px;
                 border: dashed rgb(228, 129, 78) 2px;
@@ -228,6 +252,7 @@ header {
         }
     }
     .uphold {
+        overflow: hidden;
         width: 100%;
         height: 350px;
         margin: auto;
@@ -286,6 +311,7 @@ header {
                         width: 100%;
                         .tagg-group {
                             display: flex;
+                            justify-content: center;
                             .tagg-pic {
                                 width: 5%;
                                 @media (max-width: 1140px) {
@@ -453,7 +479,8 @@ header {
             background-image: url("./02素材/清單圖示/推薦時間軸_工作區域\ 1.png");
             margin-bottom: 150px;
             @media (max-width: 1440px) {
-                width: 90%;
+                width: 100%;
+                min-height: 1500px;
                 background-image: url("./02素材/清單圖示/推薦時間軸-切版直線_工作區域\ 1.png");
                 background-position: center;
             }
@@ -464,16 +491,16 @@ header {
                 position: relative;
 
                 width: 100%;
-
+                overflow: hidden;
                 .sugg-group.set01 {
                     @include sugg-group();
                     padding-left: 20%;
                     @media (max-width: 1440px) {
                         padding-left: 0;
                     }
-                    @media (max-width: 960px) {
-                        margin-left: 8%;
-                    }
+                    @media (max-width: 1140px) {
+                        padding-left: 50px;
+                    }                   
                 }
                 .sugg-group.set02 {
                     @include sugg-group();
@@ -481,16 +508,16 @@ header {
 
                     @media (max-width: 1440px) {
                         padding-left: 0;
-                        margin-left: 55%;
-                        
-                    }                    
+                        margin-left: 50%;
+                        margin-top: 100px;
+                    }
                     @media (max-width: 1140px) {
                         flex-direction: column-reverse;
-                        
+                        margin-left: 0;
+                        padding-left: 50px;
                     }
                     @media (max-width: 960px) {
                         margin-top: 20px;
-                        margin-left: 8%;
                     }
                 }
                 .sugg-group.set03 {
@@ -501,9 +528,11 @@ header {
                     @media (max-width: 1440px) {
                         margin-top: 100px;
                         padding-left: 0;
-                    }                    
+                    }
+                    @media (max-width: 1140px) {
+                        padding-left: 50px;
+                    }
                     @media (max-width: 960px) {
-                        margin-left: 8%;
                         margin-top: 20px;
                     }
                 }
@@ -512,17 +541,18 @@ header {
                     padding-left: 32%;
                     @include sugg-group();
                     @media (max-width: 1440px) {
-                       padding-left: 0;
-                       margin-left: 55%;
-                       margin-top: 100px;
+                        padding-left: 0;
+                        margin-left: 50%;
+                        margin-top: 100px;
                     }
 
                     @media (max-width: 1140px) {
                         flex-direction: column-reverse;
-                        
+                        margin-left: 0;
+                        padding-left: 50px;
                     }
                     @media (max-width: 960px) {
-                        margin-left: 8%;
+                        margin-top: 20px;
                     }
                 }
                 .sugg-group.set05 {
@@ -532,10 +562,15 @@ header {
                     @include sugg-group();
                     @media (max-width: 1440px) {
                         padding-left: 0;
-                        margin-top: 10%;
-                    }                   
+                        margin-left: 50px;
+                        margin-top: 100px;
+                    }
+                    @media (max-width: 1140px) {
+                        padding-left: 50px;
+                        margin-left: 0;
+                    }
                     @media (max-width: 960px) {
-                        margin-left: 8%;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -543,6 +578,7 @@ header {
     }
 }
 footer {
+    overflow: hidden;
     .Contact {
         width: 100%;
         background-color: #28635a;
@@ -554,15 +590,17 @@ footer {
             width: 50%;
             @media (max-width: 960px) {
                 width: 100%;
+                
             }
         }
         .contact-group {
-            width: 35%;
+            width: 40%;
             font-size: $font20;
             color: white;
             display: flex;
             flex-wrap: wrap;
-            justify-items: center;
+            justify-content: center;
+            
 
             padding-top: 50px;
             @media (max-width: 960px) {
@@ -572,7 +610,7 @@ footer {
             .contact-text {
                 width: 100%;
                 .mar {
-                    margin: 0 10px;
+                    padding: 0 10px;
                 }
             }
             .icon-group {
