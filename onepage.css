@@ -68,12 +68,19 @@ header .navbar .logo-group {
   display: flex;
 }
 
+@media (max-width: 960px) {
+  header .navbar .logo-group {
+    width: 75%;
+  }
+}
+
 header .navbar .logo-group .logo-pic {
   width: 90px;
   margin: 0 10px;
 }
 
 header .navbar .logo-group .logo-text {
+  width: auto;
   text-align: center;
   line-height: 45px;
   font-weight: bolder;
@@ -100,6 +107,12 @@ header .navbar .btn-set {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 960px) {
+  header .navbar .btn-set {
+    width: 10%;
+  }
 }
 
 header .navbar .btn-set .hanburger {

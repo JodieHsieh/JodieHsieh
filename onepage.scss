@@ -65,11 +65,15 @@ header {
         .logo-group {
             width: 30%;
             display: flex;
+            @media (max-width: 960px) {
+                width: 75%;
+            }
             .logo-pic {
                 width: 90px;
                 margin: 0 10px;
             }
             .logo-text {
+                width: auto;
                 text-align: center;
                 line-height: 45px;
                 font-weight: bolder;
@@ -88,6 +92,9 @@ header {
             display: flex;
             align-items: flex-end;
             flex-direction: column;
+            @media (max-width: 960px) {
+                width: 10%;
+            }
             .hanburger {
                 width: 10%;
                 padding: 10px;
@@ -501,7 +508,7 @@ header {
                     }
                     @media (max-width: 1140px) {
                         padding-left: 50px;
-                    }                   
+                    }
                 }
                 .sugg-group.set02 {
                     @include sugg-group();
@@ -591,7 +598,6 @@ footer {
             width: 50%;
             @media (max-width: 960px) {
                 width: 100%;
-                
             }
         }
         .contact-group {
@@ -601,7 +607,6 @@ footer {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            
 
             padding-top: 50px;
             @media (max-width: 960px) {
